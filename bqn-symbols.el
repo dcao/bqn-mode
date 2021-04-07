@@ -136,10 +136,10 @@
                        ("greater-than-or-equal-to" "≥" ">")
                        ;; /
                        ("not-equal-to" "≠" "/")
-                       ("left-double-arrow" "⇐" "?")))
+                       ("left-double-arrow" "⇐" "?")
 
                        ;; Space bar
-                       ;; ("ligature" "‿" " ")
+                       ("ligature" "‿" "SPC")))
                        
 
 (provide 'bqn-symbols)
