@@ -76,7 +76,8 @@ the containing buffer"
     (with-current-buffer (process-buffer session)
       (goto-char (point-max))
       (insert-before-markers (concat string "\n")))
-    (comint-simple-send (process-buffer session) string)))
+    (comint-simple-send (process-buffer session) string)
+    (display-buffer (process-buffer session))))
 
 (defun bqn-interactive-send-buffer ()
   "Send the entire content of the current buffer to the active
